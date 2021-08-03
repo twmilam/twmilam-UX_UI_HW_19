@@ -1,0 +1,577 @@
+body{ Font-family: 'roboto';
+
+
+}
+
+/* NAVIGATION*/
+.navGrid {
+    display: grid;
+    height: 70px;
+    
+    grid-template-columns: 5% 15% 79%;
+    grid-template-rows: 1fr;
+    background-color: #ffffff;
+    grid-template-areas: 
+      "icon title content";
+    }
+  
+    .nav1 {
+        grid-area: icon;
+        padding-left: 40px;
+        margin-top: 10px;
+        }
+
+    .logo {
+        margin: 10px;
+        width: 3%;
+        padding:1%; 
+        display:inline;
+        }
+    
+    .myName {
+        grid-area: title;
+        font-weight: 400;
+        color: #2b2b2b;
+        padding: 20px;
+        padding-right: 45px;
+        align-items:baseline;
+        }
+  
+  
+  .content {
+    grid-area: content;
+    display: grid; 
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: Flex-end;
+    padding: 20px;
+    }
+
+
+  .nestedGrid {
+   
+   padding: 3px;
+   padding-right: 50px;
+   font-weight: 300;
+   color: rgb(128, 128, 128);}
+
+   .workMenu {
+   
+    padding: 3px;
+    padding-right: 50px;
+    font-weight: 300;
+    color: #50d2e4;}
+    
+  /* HERO ABOUT ME*/
+    
+        
+        
+    .aboutMeHeroContent {
+        display: grid;
+         width:800px;
+        height: 400px; 
+        margin-top: 20px;
+        margin-left: -8%; 
+        padding: 25%;
+        z-index: 1;
+        /*background-image:  url("../images/HP_Background.jpg");*/
+        
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 60% 50%;
+        background-size: 98%;
+        /*outline: 1px solid red;*/
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 20% 30% 40% 10%;
+        grid-template-areas:
+        "img1Port HelloTitle"
+        "img1Port TomName"
+        "img1Port pDescript"
+        "img1Port learnMore";
+                    
+}
+        
+        
+    .img1 {
+        display:flex;
+        grid-area: img1Port;
+        border-radius: 50%;
+        justify-content:left;
+        align-content: flex-start;
+        border: 8px solid #ffffff;
+        z-index: 10;
+        
+    }
+
+    .Hello5 { 
+        display:flex;
+        width: 120%;
+        
+        grid-area: HelloTitle;
+        font-weight: 700; 
+        font-size: 350%;
+        color: #5CECFF;
+        
+    }
+
+        .myNameTom {
+            display:grid; 
+            
+         
+            grid-area: TomName;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr;
+             grid-template-areas:
+            "Namelist1"
+            "Namelist2";
+                    
+            margin-top: 2%;
+            font-weight: 400; 
+            font-size: 200%;
+            color: #ffffff;
+            z-index: 1;
+            }
+
+            .Name-11 { width: 200%;
+                grid-area: Namelist1;
+                z-index: 1;
+                
+            
+            }
+
+                .Name-22 { width: 200%;
+                    grid-area: Namelist2;
+                    margin-top: -2.25%;
+                    z-index: 1;
+                    
+                }   
+            
+
+            .myStoryTelling { 
+                display:flex;
+                grid-area: pDescript;
+                margin-top: 2%;
+                font-weight: 400;
+                line-height: 140%; 
+                font-size: 130%;
+                width: 90%;
+                color: #5CECFF;
+                z-index: 1;
+            
+            }
+
+                .button {
+                    grid-area: learnMore;
+                    display:flex;
+                    margin-top: 6%;
+                    font-weight: 400; 
+                    font-size: 125%;
+                    padding-right: 17%;
+                    justify-content:flex-end ;
+                    color: #5CECFF;
+                    z-index: 1;
+                    
+                
+                }
+
+                .mtnBackground {
+                    
+                    position: relative;
+                    left: -110%;
+                    top: -450%;
+                    z-index: -10;
+                    margin-bottom: -20%;
+                    
+                      /* Set rules to fill background */
+ }
+
+                    
+                    
+                    
+            
+
+  
+  /* FOOTER SOCIAL LINKS*/
+  .footerContainer {
+    
+    display: grid;
+    height: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    Font-family: 'roboto'; 
+    font-weight: 400; 
+    font-size: 100%;
+    color: #2b2b2b;
+    margin: 1%;
+    display:flex;
+    justify-content: center;
+    grid-template-areas: 
+    "IG Pin LI";
+    }   
+
+    .footer1{
+        grid-area: IG;
+        padding-right: 2%;
+        font-weight: 400; 
+        font-size: 100%;
+        align-items: center;
+        margin-top: -18%;
+        color: rgb(128, 128, 128);
+    }
+    
+    .footer2{
+        grid-area: Pin;
+          font-weight: 400; 
+          font-size: 100%;
+          padding-right: 2%;
+          color: rgb(128, 128, 128);
+          margin-top: -18%;
+        }
+          
+    .footer3{
+        grid-area: LI;
+        font-weight: 400; 
+        font-size: 100%;
+        color: rgb(128, 128, 128);
+        margin-top: -18%;
+    }
+
+/* ANIMATION*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        display: flex;
+        justify-content: center;
+        margin-top: -18%;
+        grid-template-areas:
+        "arrow preload";
+    }
+
+    .bounceMe {
+        animation: bounceArrow .9s infinite;
+        display: flex;
+        align-items: center;
+        
+        }
+
+
+      @keyframes bounceArrow {
+        from {
+            transform: translate3D(0px, 0px, 0px);
+        }
+        
+        to {transform: translate3D(0px, 10px, 0px);
+        }
+
+    }
+
+    /* MY WORK USING CSS GRID*/
+
+   
+    .myWork {Margin-top: 5%;
+    }
+    
+    
+    
+    
+    
+    .myWorkTitle { 
+            display:flex;
+             text-align: center;
+             margin-top: 10%; 
+             justify-content: center;
+             color: rgb(128, 128, 128);
+            Font-family: 'roboto'; 
+            font-weight: 400; 
+            font-size: 120%;
+                       
+    
+    }
+        
+
+    .workGrid { display: grid;
+                margin: 2%;
+                grid-template-columns: 55% 45%;
+                grid-template-rows:1fr 1fr 1fr;
+                /*outline: 1px solid red;*/
+                padding-top: 1%;
+                padding-left: 1%;
+                margin-left: 5%;
+                margin-right: 5%;
+                border: 1px solid rgb(189, 189, 189);
+                grid-template-areas:
+                 "img1 projName1"
+                 "img1 projName1"
+                 "img1 projName1";
+                 
+    }
+
+    
+
+
+   
+    
+    .categoryGridPhoto img { 
+        grid-area: img1;
+        width:100%;
+        padding-bottom: 2%;
+    
+    }
+
+    .workContainerText1 .workTitle .workDescript .button1 { 
+        grid-area: projName1;
+        padding-bottom: 2%;
+        
+    }
+    
+    
+    .workTitle { 
+         /*outline: 1px solid red;*/
+        color: rgb(128, 128, 128);
+        font-weight: 400; 
+        font-size: 25px;
+        padding: 1%;
+        margin-top: 8%;
+        margin-left: 5%;
+    }
+
+    .workDescript { 
+        /*outline: 1px solid red;*/
+        color: rgb(128, 128, 128);
+        font-weight: 200; 
+        font-size: 15px;
+        padding: 1%;
+        margin-left: 5%;
+}
+
+    .button1{
+        Background-color: #ffffff;
+        border: 2px solid rgb(196, 196, 196);
+        text-decoration: none;
+        padding: 1%;
+        margin-left: 6%;
+        margin-top: 3%;
+        color: rgb(128, 128, 128);
+        font-weight: 400; 
+        font-size: 15px;
+        
+        /*outline: 1px solid red;*/
+        
+
+    }
+
+    .viewProj {  
+        display:flex;
+        text-align: center;
+        margin-top: 2%; 
+        justify-content:center;
+        color: rgb(128, 128, 128);
+        font-weight: 400; 
+        font-size: 120%; }
+
+
+
+/* MY SKILLS USING FLEX*/
+
+    .mySkillsType { 
+        margin-top: 15%;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        color: rgb(128, 128, 128);
+        font-weight: 400; 
+        font-size: 120%;
+         
+    
+    }
+
+    .skillsContainer {
+        Display: flex;
+        height: 550px;
+        margin-left: 2%;
+        margin-right: 2%;
+         /*outline: 1px solid red;*/
+                        
+    }
+
+    .skillOne  { width: 33%;
+        
+        justify-content:center;
+        margin: 3%;
+        padding: 1%;
+        padding: 6%;
+        text-align:center;
+        border: 1px solid rgb(189, 189, 189);
+    }
+        .uxDesign {
+        color: rgb(128, 128, 128);
+         font-weight: 400; 
+         font-size: 150%;
+         margin-top: 3%;
+         padding: 6%;
+         text-align:center;
+                
+                }
+                
+        .uxDescript {
+        color: rgb(128, 128, 128);
+        font-weight: 300; 
+        font-size: 100%;
+        margin-top: 1%;
+        text-align:center;
+                
+     }
+
+    .skillTwo { width: 33%; 
+        /*outline: 1px solid red;*/
+        justify-content:center;
+        margin: 3%;
+        padding: 1%;
+        padding: 6%;
+        text-align:center;
+        border: 1px solid rgb(189, 189, 189);
+}
+
+        .uiDesign {
+        color: rgb(128, 128, 128);
+        font-weight: 400; 
+        font-size: 150%;
+        margin-top: 3%;
+        padding: 6%;
+        text-align:center;
+    }
+
+        .uiDescript {
+        color: rgb(128, 128, 128);
+        font-weight: 300; 
+        font-size: 100%;
+        margin-top: 1%;
+        text-align:center;
+}
+
+
+
+
+    .skillThree { width: 33%;
+        /*outline: 1px solid red;*/
+        justify-content:center;
+        margin: 3%;
+        padding: 1%;
+        padding: 6%;
+        text-align:center;
+        border: 1px solid rgb(189, 189, 189);
+}
+
+
+        .brandID {
+        color: rgb(128, 128, 128);
+        font-weight: 400; 
+        font-size: 150%;
+        margin-top: 3%;
+        padding: 6%;
+        text-align:center;
+    
+        }
+
+        .brandIDDescript {
+        color: rgb(128, 128, 128);
+        font-weight: 300; 
+        font-size: 100%;
+        margin-top: 1%;
+        text-align:center;
+
+    }
+
+
+/* ABOUT ME SECTION / MY SKILLS USING FLEX GRID */
+
+.aboutMe {display:flex;
+    text-align: center;
+    margin-top: 15%; 
+    justify-content: center;
+    color: rgb(128, 128, 128);
+    
+   font-weight: 400; 
+   font-size: 120%; }
+   
+   
+   .aboutMeContainer { 
+        display: grid;
+        margin: 2%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 25% 25%;
+        /*outline: 1px solid red;*/
+        padding: 1%;
+        grid-template-areas:
+         "me1 me2"
+         "aboutmeText aboutmeText" 
+         "aboutmeText2 aboutmeText2";
+    }
+
+    .aboutme1{
+        Grid-area: me1;
+        padding-left:40%;
+        }
+
+
+    .aboutme2{
+        Grid-area: me2;
+        padding-left:4%;
+    }
+
+
+#aboutMeExplain {
+    Grid-area: aboutmeText;
+     display: flex;
+    color: rgb(128, 128, 128);
+    justify-content: center;
+    
+    Margin: 5%;
+    padding-right: 15%;
+    line-height: 150%;
+    padding-left: 15%;
+    font-weight: 300; 
+    font-size: 100%;
+    margin-top: 0%;
+    justify-content:center;
+    /*outline: 1px solid red;*/}
+
+
+ 
+#AboutMe3 { 
+        Grid-area: aboutmeText2;
+         display: flex;
+        color: rgb(128, 128, 128);
+        justify-content: center;
+        
+        Margin: 5%;
+        padding-right: 15%;
+        line-height: 150%;
+        padding-left: 15%;
+        font-weight: 300; 
+        font-size: 100%;
+        margin-top: -1%;
+        justify-content:center;
+        /*outline: 1px solid red;*/}
+
+     
+     
+     
+ @media only screen and (max-width: 600) { 
+
+
+            .workGrid { 
+            grid-template-rows:200px 200px 200px 200px 200px 200px ;
+            grid-template-areas:
+             "img1" 
+             "projName1"
+             "img1" 
+             "projName1"
+             "img1" 
+             "projName1"
+    
+             ;}
+
+} 
