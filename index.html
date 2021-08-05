@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
 <html>
-
+  <h2 id="backToTop"></h2>
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +12,15 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
 
   <link href="css/style.css" type="text/css" rel="stylesheet">
   <title></title>
-
+  
 </head>
 
 <body>
 
   <!-- Nav HTML / Flex Grid Set up -->
+  
   <div class="navGrid">
+    
     <div class="nav1">
       <div class="logo">
         <img  src="images/logo.png" alt="TM Design Logo" width="35" height="35" />
@@ -26,8 +28,16 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
     </div>
     <div class="myName">Thomas Milam Portfolio</div>
     <div class="content">
-      <div class="workMenu">work</div>
-      <div class="nestedGrid">about me</div>
+      <div class="workMenu">
+        <a href="#workMenu">work</a>
+
+      </div>
+      
+      
+      <div class="nestedGrid">
+        <a href="#aboutMe">about me</a>
+        </div>
+
       <div class="nestedGrid">resume</div>
       <div class="nestedGrid">contact</div>
     </div>
@@ -36,6 +46,7 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
 
   <!-- Hero Image / About me Section -->
   <section class="hero">
+    
     <div class="aboutMeHeroContent">
       
       <div>
@@ -55,7 +66,9 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
         the last many years…</div>
       
         
-      <div class="button"> // Learn more about my story</div>
+      <div class="button"> 
+        <a href="#learnStory">// Learn more about my story</a>
+      </div>
 
       <div> 
         <img class="mtnBackground" src="images/HP_Background.jpg"  alt="Mountain Image" width="1700" height="1000" />
@@ -89,7 +102,10 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
 
   <section>
 
-    <div class="myWorkTitle"> // My Work </div>
+    <div class="myWorkTitle"> // My Work 
+      <h3 id="workMenu"></h3>
+
+    </div>
 
   <div class="workGrid"> 
       
@@ -188,6 +204,8 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
 <section class="aboutMeContent">
 
   <div class="aboutMe"> // About Me </div>
+  <h2 id="aboutMe"></h2>
+  <h4 id="learnStory"></h4>
 
   <div class="aboutMeContainer">
   
@@ -216,6 +234,16 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,
   
 
 </section>
+
+
+<div class="backToTop"> 
+  <a href="#backToTop">// Back to Top</a>
+
+
+</div>
+
+
+
 </body>
 
 <script scr="js/index.js">
