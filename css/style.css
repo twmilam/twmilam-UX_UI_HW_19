@@ -591,15 +591,80 @@ body{ Font-family: 'roboto';
  @media only screen and (max-width: 600px) { 
 
 
+    /* MEDIA Q - NAV SECTION */
+
+    .navGrid {
+        display: grid;
+        height: 70px;
+        
+        grid-template-columns: 5% 15% 79%;
+        grid-template-rows: 1fr;
+        background-color: #ffffff;
+        grid-template-areas: 
+          "icon title content";
+        }
+      
+        .nav1 {
+            grid-area: icon;
+            padding-left: 10px;
+            margin-top: 10px;
+            }
+    
+        .logo {
+            margin: 10px;
+            width: 3%;
+            padding:1%;
+            margin-top: 10px; 
+            display:inline;
+            }
+        
+        .myName {
+            grid-area: title;
+            font-weight: 400;
+            color: #2b2b2b;
+            padding: 20px;
+            padding-right: 10px;
+            padding-left:35px ;
+            align-items:baseline;
+            }
+      
+      
+      .content {
+        grid-area: content;
+        display: grid; 
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: Flex-end;
+        padding: 20px;
+        }
+    
+    
+      .nestedGrid {
+       
+       padding: 3px;
+       padding-right: 15px;
+       font-weight: 300;
+       color: rgb(128, 128, 128);}
+    
+       .workMenu {
+       
+        padding: 3px;
+        padding-right: 15px;
+        font-weight: 300;
+        color: #50d2e4;}
+        
+/* MEDIA Q - HERO SECTION */
+
+
     .aboutMeHeroContent {
         display: grid;
-         width:800px;
-        height:955px; 
+         width:600px;
+        height:1000px; 
         margin-top: 20px;
         margin-left: -8%; 
         padding: 25%;
         z-index: 1;
-        /*background-image:  url("../images/HP_Background.jpg");*/
+        background-image:  url("../images/HP_Background2.jpg");
         
         background-size: cover;
         background-repeat: no-repeat;
@@ -619,8 +684,8 @@ body{ Font-family: 'roboto';
             display:flex;
             grid-area: img1Port;
             border-radius: 50%;
-            justify-content:left;
-            align-content: flex-start;
+            justify-content:center;
+            align-content: center;
             border: 8px solid #ffffff;
             z-index: 10;
             
@@ -629,7 +694,8 @@ body{ Font-family: 'roboto';
         .Hello5 { 
             display:flex;
             width: 120%;
-            margin-top: 5%;
+            margin-top: 3%;
+            margin-left: -5%;
             
             grid-area: HelloTitle;
             font-weight: 700; 
@@ -640,6 +706,7 @@ body{ Font-family: 'roboto';
     
             .myNameTom {
                 display:grid; 
+                margin-left: -5%;
                 
              
                 grid-area: TomName;
@@ -683,6 +750,7 @@ body{ Font-family: 'roboto';
                     width: 45%;
                     color: #5CECFF;
                     z-index: 1;
+                    margin-left: -5%;
                 
                 }
     
@@ -692,7 +760,7 @@ body{ Font-family: 'roboto';
                         margin-top: 6%;
                         font-weight: 400; 
                         font-size: 125%;
-                        padding-right: 55%;
+                        padding-right: 40%;
                         justify-content:flex-end ;
                         color: #5CECFF;
                         z-index: 1;
@@ -701,16 +769,15 @@ body{ Font-family: 'roboto';
                     }
 
         .mtnBackground {
+            
                     
-            left: -50%;
-            top: -85%;
+            background-position: -9999px -9999px;
             z-index: -10;
             margin-bottom: -20%;}
 
 /* MEDIA Q - WORK SECTION */
 
-.myWork {Margin-top: 10%;
-}
+
 
 
 
@@ -732,13 +799,12 @@ body{ Font-family: 'roboto';
 }
             .workGrid { 
                 display: grid;
-                margin: 0%;
                 grid-template-columns: 100%;
+                height: 1200px;
+                padding-top: 0%;
             
-                padding-top: 1%;
                 padding-left: 0%;
-                margin-left: 5%;
-                margin-right: 5%;
+               
                 border: 0px solid rgb(189, 189, 189);
                 grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
                 grid-template-areas:
@@ -749,6 +815,99 @@ body{ Font-family: 'roboto';
                 "projName2"
                 "img3" 
                 "projName3"; }
+
+              
+                
+
+
+               }
+                 
+                 
+                 .categoryGridPhoto1 { 
+                    grid-area: img1;
+                    
+                    
+                    
+                    }
+                 
+                 .workContainerText1 { 
+                    grid-area: projName1;
+                    margin-top: -15%;
+                    
+                    
+                    
+                    }
+                 
+                 
+                 
+               .categoryGridPhoto2  { 
+                    grid-area: img2;
+                    margin-top: -5%;
+                    }
+                 
+                 .workContainerText2 { 
+                    grid-area: projName2;
+                    margin-top: -20%;
+                  }
+
+
+                 
+                 .categoryGridPhoto3  { 
+                    grid-area: img3;
+                }
+                 
+                 .workContainerText3 { 
+                    grid-area: projName3;
+                    margin-top: -15%;
+                    }
+                 
+                 
+                 .workTitle { 
+                     /*outline: 1px solid red;*/
+                    color: rgb(128, 128, 128);
+                    font-weight: 400; 
+                    font-size: 25px;
+                    margin-left: 0%;
+                    text-align: center;
+                 }
+                 
+                 .workDescript { 
+                    /*outline: 1px solid red;*/
+                    color: rgb(128, 128, 128);
+                    font-weight: 200; 
+                    font-size: 15px;
+                    margin-left: 0%;
+                    text-align: center;
+                 }
+                 
+                 .button1 {
+                    Background-color: #ffffff;
+                    border: 2px solid rgb(196, 196, 196);
+                    text-decoration: none;
+                    
+                    margin-left: 1%;
+                    
+                    color: rgb(128, 128, 128);
+                    font-weight: 400; 
+                    font-size: 15px;
+                    align-content: center;
+                    
+                    /*outline: 1px solid red;*/
+                    
+                 
+                 }
+                 
+                 .viewProj {  
+                    display:flex;
+                    text-align: center;
+                    margin-top: 2%; 
+                    justify-content:center;
+                    color: rgb(128, 128, 128);
+                    font-weight: 400; 
+                    font-size: 120%; }
+
+
+
                 
                 
 /* MEDIA Q - SKILLS SECTION */
@@ -763,17 +922,17 @@ body{ Font-family: 'roboto';
                 font-size: 120%;
                 }
         
-            .skillsContainer {
+    .skillsContainer {
                 Display: grid;
                 height: 1000px;
                 margin-left: 2%;
-                margin-right: 2%;
+                margin-right: 16%;
                 grid-template-columns:100%;
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                  /*outline: 1px solid red;*/
                 }
         
-            .skillOne  { width: 100%;
+        .skillOne  { width: 100%;
                 
                 justify-content:center;
                 margin: 3%;
@@ -799,7 +958,7 @@ body{ Font-family: 'roboto';
                 text-align:center;
                 }
         
-            .skillTwo { width: 100%; 
+        .skillTwo { width: 100%; 
                 /*outline: 1px solid red;*/
                 justify-content:center;
                 margin: 3%;
@@ -829,7 +988,7 @@ body{ Font-family: 'roboto';
         
         
         
-            .skillThree { width: 100%;
+        .skillThree { width: 100%;
                 /*outline: 1px solid red;*/
                 justify-content:center;
                 margin: 3%;
