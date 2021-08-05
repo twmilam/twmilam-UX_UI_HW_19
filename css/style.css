@@ -9,6 +9,10 @@ body{ Font-family: 'roboto';
     height: 70px;
     
     grid-template-columns: 5% 15% 79%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 25;
     grid-template-rows: 1fr;
     background-color: #ffffff;
     grid-template-areas: 
@@ -74,6 +78,7 @@ body{ Font-family: 'roboto';
         margin-left: -8%; 
         padding: 25%;
         z-index: 1;
+        
         /*background-image:  url("../images/HP_Background.jpg");*/
         
         background-size: cover;
@@ -93,7 +98,7 @@ body{ Font-family: 'roboto';
 }
         
         
-    .img1 {
+    .img10 {
         display:flex;
         grid-area: img1Port;
         border-radius: 50%;
@@ -588,44 +593,85 @@ body{ Font-family: 'roboto';
 
      
      
- @media only screen and (max-width: 600px) { 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        @media only screen and (max-width: 600px) { 
 
 
     /* MEDIA Q - NAV SECTION */
 
     .navGrid {
         display: grid;
-        height: 70px;
+        height: 200px;
         
-        grid-template-columns: 5% 15% 79%;
-        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
         background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 25;
         grid-template-areas: 
-          "icon title content";
+          "icon"
+          "title" 
+          "content";
         }
       
         .nav1 {
             grid-area: icon;
-            padding-left: 10px;
-            margin-top: 10px;
+            
+            display:flex;
+            justify-content:center;
+            
             }
+
+            .img10 {
+                display:flex;
+                grid-area: img1Port;
+                border-radius: 50%;
+                justify-content:center;
+                border: 8px solid #ffffff;
+                z-index: 10;
+                width: 150px;
+                height: 150px;
+                
+            }
+
+          
     
         .logo {
+            display:flex;
             margin: 10px;
             width: 3%;
             padding:1%;
+            margin-right: 20%;
             margin-top: 10px; 
             display:inline;
             }
         
         .myName {
             grid-area: title;
+            display:flex;
             font-weight: 400;
             color: #2b2b2b;
-            padding: 20px;
-            padding-right: 10px;
-            padding-left:35px ;
-            align-items:baseline;
+            margin-top: -4%;
+            justify-content:center;
             }
       
       
@@ -634,7 +680,7 @@ body{ Font-family: 'roboto';
         display: grid; 
         display: flex;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        justify-content: Flex-end;
+        justify-content: center;
         padding: 20px;
         }
     
@@ -660,7 +706,7 @@ body{ Font-family: 'roboto';
         display: grid;
          width:600px;
         height:1000px; 
-        margin-top: 20px;
+        margin-top: 150px;
         margin-left: -8%; 
         padding: 25%;
         z-index: 1;
@@ -820,7 +866,7 @@ body{ Font-family: 'roboto';
                 
 
 
-               }
+               
                  
                  
                  .categoryGridPhoto1 { 
@@ -1081,4 +1127,4 @@ body{ Font-family: 'roboto';
                     margin-top: 0%;
                     justify-content:center;
                     /*outline: 1px solid red;*/}    
-                    } 
+   }                   
