@@ -788,7 +788,7 @@ body{ Font-family: 'roboto';
     .aboutMeHeroContent {
         display: grid;
          width:600px;
-        height:1000px; 
+        height:800px; 
         margin-top: 150px;
         margin-left: -8%; 
         padding: 25%;
@@ -904,7 +904,84 @@ body{ Font-family: 'roboto';
             z-index: -10;
             margin-bottom: -20%;}
 
-/* MEDIA Q - WORK SECTION */
+  /* FOOTER SOCIAL LINKS*/
+  .footerContainer {
+    
+    display: grid;
+    height: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    Font-family: 'roboto'; 
+    font-weight: 400; 
+    font-size: 100%;
+    color: #2b2b2b;
+    
+    margin: 1%;
+    display:flex;
+    justify-content: center;
+    grid-template-areas: 
+    "IG Pin LI";
+    }   
+
+    .footer1{
+        grid-area: IG;
+        padding-right: 2%;
+        font-weight: 400; 
+        font-size: 100%;
+        align-items: center;
+        margin-top: -40%;
+        color: rgb(128, 128, 128);
+        cursor:pointer;
+    }
+    
+    .footer2{
+        grid-area: Pin;
+          font-weight: 400; 
+          font-size: 100%;
+          padding-right: 2%;
+          color: rgb(128, 128, 128);
+          margin-top: -40%;
+          cursor:pointer;
+        }
+          
+    .footer3{
+        grid-area: LI;
+        font-weight: 400; 
+        font-size: 100%;
+        color: rgb(128, 128, 128);
+        margin-top: -40%;
+        cursor:pointer;
+    }
+
+/* ANIMATION*/
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        display: flex;
+        justify-content: center;
+        margin-top: -18%;
+        grid-template-areas:
+        "arrow preload";
+    }
+
+    .bounceMe { display: none;
+       
+        
+        }
+
+
+      @keyframes {
+        from {
+            transform: translate3D(0px, 0px, 0px);
+        }
+        
+        to {transform: translate3D(0px, 10px, 0px);
+        }
+
+    }
+
+            /* MEDIA Q - WORK SECTION */
 
 
 
@@ -914,7 +991,7 @@ body{ Font-family: 'roboto';
 
 .myWorkTitle { 
 
-    Margin-top: 10%;
+   
         
     text-align: center;
    
